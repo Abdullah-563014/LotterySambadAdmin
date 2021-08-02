@@ -180,6 +180,9 @@ class LotteryNumberUploadActivity : AppCompatActivity(), View.OnClickListener {
                                     if (response.body()!=null) {
                                         resetData()
                                         shortToast(resources.getString(R.string.data_uploaded))
+                                        Coroutines.io {
+                                            CommonMethods.sendNotification(resources.getString(R.string.result_publish_notification_title),resources.getString(R.string.result_publish_notification_description),null)
+                                        }
                                     } else {
                                         shortToast(resources.getString(R.string.unknown_error))
                                     }
