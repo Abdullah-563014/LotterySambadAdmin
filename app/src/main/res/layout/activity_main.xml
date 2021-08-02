@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_one"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/uploadPdfAndImageButton"
+            style="@style/MyButtonStyle"
+            android:visibility="gone"
+            android:text="@string/upload_pdf_and_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+        <Button
+            android:id="@+id/uploadLotteryNumberButton"
+            style="@style/MyButtonStyle"
+            android:text="@string/upload_lottery_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+        <Button
+            android:id="@+id/uploadAdsImageButton"
+            style="@style/MyButtonStyle"
+            android:text="@string/upload_ads_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+        <Button
+            android:id="@+id/uploadHomeTutorialButton"
+            style="@style/MyButtonStyle"
+            android:text="@string/upload_home_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+    </LinearLayout>
+</ScrollView>
